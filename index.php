@@ -1,4 +1,9 @@
 <?php
+/** Informa o nivel dos erros que serão exibidos */
+error_reporting(E_ALL);
+/** Habilita a exibição de erros */
+ini_set("display_errors", 1);
+
 
 // Headers necessários
 header("Access-Control-Allow-Origin: *");
@@ -7,7 +12,7 @@ header("Content-Type: application/json; charset=UTF-8");
 // Conexão com o banco de dados
 include_once 'conexao.php';
 
-$query_produtos = "SELECT id, tiulo, descricao FROM produtos ORDER BY ID DESC";
+$query_produtos = "SELECT id, titulo, descricao FROM produtos ORDER BY ID DESC";
 $result_produtos = $conn->prepare($query_produtos);
 $result_produtos->execute();
 
