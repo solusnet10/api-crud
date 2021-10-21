@@ -1,2 +1,2 @@
 # api-crud
-api em php para ser consumida com front-end em react
+api em php para cadastro, pesquisa, e listagem  de peças em loja de auto-peças
