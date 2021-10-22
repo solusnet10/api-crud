@@ -1,7 +1,11 @@
 <?php
+/** Informa o nivel dos erros que serão exibidos */
+error_reporting(E_ALL);
+/** Habilita a exibição de erros */
+ini_set("display_errors", 1);
 
 // Headers obrigátorios
-header("Acces-Control_Allow-Origin: *");
+header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: *");
 // header("Access-Control-Allow-Methods: GET,PUT,POST,DELETE");
